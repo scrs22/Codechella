@@ -5,7 +5,7 @@ class SignIn:
         self.password=password
 
     def check_user(self):
-        pass
+        
 
     def getInfo(self):
         pass

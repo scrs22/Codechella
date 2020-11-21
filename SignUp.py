@@ -1,3 +1,4 @@
+from DatabaseDemo
 class SignUp:
     def __init__(self,username,password,twitterHandle,contact):
         self.username=username
@@ -7,7 +8,7 @@ class SignUp:
 
 
     def checkUserExists(self):
-        pass
+
 
     def storeInfo(self):
         pass
