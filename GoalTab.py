@@ -7,4 +7,6 @@ class GoalTab:
         self.goal=goal
 
     def goto_goal(self):
-        pass
+        get_goal
+
+        

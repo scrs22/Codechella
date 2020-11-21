@@ -5,5 +5,8 @@ class Goal:
         self.trackInfo=None
         self.supportList=None
 
-    def
+    def getSupportList(self):
+        # @Todo shreeram
+        pass
 
+    def get
