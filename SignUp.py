@@ -6,11 +6,8 @@ class SignUp:
         self.password=password
         self.twitterHandle=twitterHandle
         self.contact=contact
-        self.accesstoken=None
-        self.secretkey=None
-
-    def twitterSignIn(self):
-        pass
+        self.oAuthaccesstoken=None
+        self.oAuthsecretkey=None
 
     def checkUserNameExists(self):
         if self.username in data:
@@ -18,17 +15,22 @@ class SignUp:
         else:
             return False
 
+    def setuserAccountAccess(self,oAuthaccesstoken,oAuthsecretkey):
+        self.oAuthaccesstoken=oAuthaccesstoken
+        self.oAuthsecretkey=oAuthsecretkey
+
     def addUser(self):
-        if checkUserNameExists():
-            return
-            #@todo ask for a different username
-        else:
-            data[s]
+        if self.checkUserNameExists()==False:
+            data[self.username]={"UserId":self.username,
+                                "password":self.password,
+                                "twitterHandle":self.twitterHandle,
+                                "contact":self.contact,
+                                "oAuthAccesstoken":self.oAuthaccesstoken,
+                                "oAuthSecretkey":self.oAuthsecretkey,
+                                "goal":{}}
+
+    def addUserGoal(self,goal):
+        data[self.username]["goal"]={goal.getName:{goal.getHashTag:{}}}
 
 
-    def IncorrectUserName(self):
-        if
 
-
-    def storeInfo(self):
-        pass

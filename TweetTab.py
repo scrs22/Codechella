@@ -1,7 +1,7 @@
 from demo1 import api
 import tweepy as tw
 class TweetTab:
-    def __init__(self,search_q,date_since,num_tweets):
+    def __init__(self,goal,date_since,num_tweets=50):
         self.search_q=search_q
         self.date_since=date_since
         self.num_tweets=num_tweets

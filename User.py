@@ -18,7 +18,7 @@ class User:
             return {"tweet":"","Media":""}
 
     def setGoalData(self,goal,date,info):
-        data[self.username][goal][date]=info
+        data[self.username][goal.name][goal.hashtag][date]=info
 
 
 
