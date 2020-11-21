@@ -1,4 +1,4 @@
-#import database
+from DatabaseDemo import data
 #user account information
 #user goal information
 #
@@ -7,12 +7,22 @@ class User:
     #user enters username and password-account information
     #goal_dataset
     def __init__(self,username):
-        self.userid=username
-        self.data=None
+        self.username=username
+        self.udata=None
 
-    def get_data(self,goal):
+    def getGoalData(self,goal,date):
         #how to get data from database
+        if date in data[self.username][goal]:
+            return data[self.username][goal][date]
+        else:
+            return {"tweet":"","Media":""}
+
+    def setGoalData(self,goal,date,info):
+        data[self.username][goal][date]=info
+
+
+
+
+    def set_data(self):
         pass
-    def store_data(self):
-        pass
-    def 
+    def
