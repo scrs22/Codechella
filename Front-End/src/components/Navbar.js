@@ -42,35 +42,9 @@ class HomeNavbar extends React.Component {
     return (
       <div className="header">
         <div className="logo">
-          <h2 style={{ textAlign: "center", color: "white" }}>Twitter Analytics</h2>
+          <h2 style={{ textAlign: "center", color: "white" }}>Tweesome</h2>
         </div>
-        <div className="menuItems">
-          <NavLink
-            to="/"
-            activeStyle={{ fontWeight: "bold", color: "#cf913f" }}
-            style={{ color: "#c5c5c5" }}
-            className="nav-link"
-            exact
-          >
-           <h4> Home</h4>
-          </NavLink>
-          <NavLink
-            to="/link1"
-            activeStyle={{ fontWeight: "bold", color: "#cf913f" }}
-            style={{ color: "#c5c5c5" }}
-            className="nav-link"
-          >
-            <h4>Link1 </h4>
-          </NavLink>
-          <NavLink
-            to="/link2"
-            activeStyle={{ fontWeight: "bold", color: "#cf913f" }}
-            style={{ color: "#c5c5c5" }}
-            className="nav-link"
-          >
-           <h4>Link2</h4> 
-          </NavLink>
-        </div>
+
       </div>
     );
   }
