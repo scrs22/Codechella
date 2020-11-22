@@ -9,6 +9,11 @@ class User:
     def __init__(self,username):
         self.username=username
         self.udata=None
+        self.key=None
+        self.secret=None
+    def setAccess(self,key,secret):
+        self.key=key
+        self.secret=secret
 
     def getGoalData(self,goal,date):
         #how to get data from database
