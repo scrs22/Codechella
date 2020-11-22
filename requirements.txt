@@ -1,0 +1,6 @@
+flask
+flask-sqlalchemy
+tweepy
+sqlite3
+Flask-Migrate
+passlib
