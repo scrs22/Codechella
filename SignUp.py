@@ -1,4 +1,4 @@
-from DatabaseDemo import data
+from UserDatabase import data
 
 class SignUp:
     def __init__(self,username,password,twitterHandle,contact):
