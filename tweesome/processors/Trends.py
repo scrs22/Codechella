@@ -55,6 +55,3 @@ class Trends:
             location=self.get_location(tweet)
             trendList.append([tweet.text,"https://twitter.com/twitter/statuses/"+str(tweet.id),user,location])
 
-
-
-

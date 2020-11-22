@@ -12,14 +12,12 @@ class Support:
             # print(tweet.text,"\n")
             user = tweet.user
             name=user.name
-            url=user.url
+            url="https://twitter.com/"+name
             location = user.location
             followerCount=user.followers_count
             if followerCount>50 and user.url!=None:
                 self.supportGroups.append(["@"+name,url,location,followerCount])
         return self.supportGroups
 
-
-
-
-
+    def follow(self, user):
+        user.follow()
