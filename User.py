@@ -21,8 +21,3 @@ class User:
         data[self.username][goal.name][goal.hashtag][date]=info
 
 
-
-
-    def set_data(self):
-        pass
-    def

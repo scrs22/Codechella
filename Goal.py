@@ -1,7 +1,7 @@
 class Goal:
     def __init__(self,goalname, hashtag):
         self.goalname=goalname
-        self.hashList=hashtag
+        self.hashtag=hashtag
         self.trackInfo=None
         self.supportList=None
 
@@ -9,4 +9,5 @@ class Goal:
         # @Todo shreeram
         pass
 
-    def getSupport
+    def getSearchq(self):
+        return self.hashtag

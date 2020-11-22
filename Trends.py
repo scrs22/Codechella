@@ -4,19 +4,20 @@ import tweepy as tw
 from datetime import date
 
 class Trends:
-    def __init__(self,goal,date_since,num_tweets=50,location="No Preference"):
-        self.search_q=goal.search_q
+    def __init__(self,goal,date_since,num_tweets=50,location=None):
+        self.search_q=goal.getSearchq()
         self.date_since=date_since
         self.num_tweets=num_tweets
+        self.location=location
         self.country=None
 
     def get_tweets(self):
         try:
             self.country=pycountry.countries.search_fuzzy(self.location)
         except:
-            self.country =""
+            self.country =None
 
-        if self.country =="":
+        if self.country ==None:
             tweets = tw.Cursor(api.search,
                                q=self.search_q,
                                lang="en",
