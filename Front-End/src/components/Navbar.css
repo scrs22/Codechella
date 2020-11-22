@@ -1,0 +1,49 @@
+.header {
+  height: 80px;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgb(6, 75, 96);
+  padding: 25px 20px 0 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.menuItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btninactive {
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 20px !important; 
+  background: white;
+  color: #cf913f;
+  margin-bottom: none !important;
+  border: none !important;
+  margin-left: 10px;
+}
+
+.btnactive {
+  background: #cf913f;
+  color: white;
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 20px !important;
+  margin-bottom: none !important;
+  border: none !important;
+  margin-left: 10px;
+}
